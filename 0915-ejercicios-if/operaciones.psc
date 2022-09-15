@@ -27,14 +27,4 @@ Algoritmo operaciones
 			FinSi
 		FinSi
 	FinSi
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 FinAlgoritmo

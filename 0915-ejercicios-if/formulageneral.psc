@@ -10,10 +10,10 @@ Algoritmo calcular_formula_general
 	Leer c
 	
 	// Calculamos la formula
-	discrimeante <- b^2 - 4*a*c
+	discriminante <- b^2 - 4*a*c
 	
-	x1 <- (-b + rc(discrimeante)) / (2*a)
-	x2 <- (-b - rc(discrimeante)) / (2*a)
+	x1 <- (-b + rc(discriminante)) / (2*a)
+	x2 <- (-b - rc(discriminante)) / (2*a)
 	
 	// Imprimo resultado
 	Escribir "X1 es: ", x1
