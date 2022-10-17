@@ -1,0 +1,4 @@
+Hola
+
+Este es un archivo de texto
+y se puede leer en el bloc de notas
