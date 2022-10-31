@@ -2,7 +2,7 @@ import csv
 import os
 
 # Nombre de los archivos para abrir
-ARCHIVO_DIRECTORIO="directorio_telefonico.csv"
+ARCHIVO_DIRECTORIO="directorio.csv"
 
 def mostrar():
     archivo = open(ARCHIVO_DIRECTORIO,"r")
@@ -46,47 +46,3 @@ def borrar(numero):
     archivo_temporal.close()
     os.remove(ARCHIVO_DIRECTORIO)
     os.rename("temporal.csv", ARCHIVO_DIRECTORIO)
-
-def menu():
-    print("-------- Menu ---------")
-    print("1: Agregar")
-    print("2: Mostrar")
-    print("3: Eliminar")
-    print("4: Salir")
-    opcion = eval(input("Opcion: "))
-    return opcion
-
-opcion_menu = 0
-
-while opcion_menu != 4:
-    opcion_menu = menu()
-    if opcion_menu == 1:
-        agregar()
-    elif opcion_menu == 2:
-        mostrar()
-    elif opcion_menu == 3:
-        mostrar()
-        numero = eval(input("Escribe el número para eliminar: "))
-        si_borrar = input("Estas seguro (S/n): ")
-        if si_borrar.lower()[0] == "s":
-            borrar(numero)
-    elif opcion_menu == 4:
-        pass
-    else:
-        print("Opción Invalida")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
