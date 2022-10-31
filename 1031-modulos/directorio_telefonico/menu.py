@@ -4,5 +4,7 @@ def principal():
     print("2: Mostrar")
     print("3: Eliminar")
     print("4: Salir")
-    opcion = eval(input("Opcion: "))
-    return opcion
+    opcion = input("Opcion: ")
+    if opcion.isdigit():
+        return eval(opcion)
+    return 0
